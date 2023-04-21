@@ -2,3 +2,6 @@ eureka:
   instance:
     # enable to register multiple app instances with a random server port
     instance-id: ${spring.application.name}:${random.uuid}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
